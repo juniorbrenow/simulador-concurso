@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Concurso | 1000 Questões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Simulador Concurso Público</h1>
+            <p>1000 questões com backend e banco de dados</p>
+        </header>
+
+        <div class="controls">
+            <label for="temaFilter">Filtrar por tema:</label>
+            <select id="temaFilter">
+                <option value="">Todos os temas</option>
+            </select>
+            <label for="pageSize">Questões por página:</label>
+            <select id="pageSize">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+            </select>
+            <button id="loadBtn">Carregar questões</button>
+            <button id="resetProgressBtn">Resetar meu progresso</button>
+        </div>
+
+        <div id="questionList" class="question-list"></div>
+        <div id="pagination" class="pagination"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
